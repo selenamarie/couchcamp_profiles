@@ -1,0 +1,13 @@
+function(doc) {
+  var all;
+  for (x in doc) { 
+	if (x == "urls") { // loop through
+		for (y in doc[x]) {
+			all = all + " " + y + ": " +  + "\n";
+		}
+	} else if (x == "bio") {
+     all = all + "" + x + ": " + doc[x] + "\n"; 	
+	}
+  }	 
+  emit(all, doc);
+}

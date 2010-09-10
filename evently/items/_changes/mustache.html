@@ -1,0 +1,20 @@
+<h3>CouchCampers</h3>
+<ul>
+    {{#items}}
+    <li>
+	{{#attachments}}
+		<img width=200 src="../../{{src}}" style="float:left; padding-right:10px;">
+	{{/attachments}}
+	<b>{{name}}</b> <br/>
+	<i>{{bio}}</i> <br/>
+	<ul>
+        {{#urls}}
+		<li>
+		<a href="{{url}}">{{label}}</a>
+		</li>
+	{{/urls}}
+	</ul>
+      <div style="clear:left;"></div>
+    </li>
+    {{/items}}
+</ul>
